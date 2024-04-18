@@ -1,3 +1,11 @@
+# This script is designed to test data processing and model functionalities for the dataset
+# "Death rates for suicide, by sex, race, Hispanic origin, and age, United States".
+# It leverages the `testthat` package for unit testing to ensure that data manipulations
+# and model outputs are accurate and reliable. The script also incorporates the `dplyr` and
+# `stats` libraries for data manipulation and statistical modeling, respectively.
+# The sample data provided mimics the real dataset structure to validate the process_and_model
+# function's capability to filter, process, and model the data correctly.
+
 # Load the testthat library
 if (!require("testthat")) install.packages("testthat")
 if (!requireNamespace("here", quietly = TRUE)) {
