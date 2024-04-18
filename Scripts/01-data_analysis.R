@@ -33,7 +33,12 @@ filtered_data$Age_Group <- trimws(filtered_data$Age_Group)
 
 # Regression analysis
 model <- lm(ESTIMATE ~ factor(Sex) + factor(Race) + factor(Age_Group), data = filtered_data)
-summary(model)
+# Store the summary of the model
+model_summary <- summary(model)
+
+# Print the summary without significance stars
+print(model_summary, signif.stars = FALSE)
+
 
 # Plotting
 # Plot 1: Suicide Rates by Sex and Age Group
@@ -48,5 +53,5 @@ ggplot(filtered_data, aes(x = Race, y = ESTIMATE, fill = Race)) +
   geom_bar(stat = "identity") +
   labs(title = "Suicide Rates by Race", x = "Race", y = "Death Rate per 100,000 (Age-adjusted)") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.margin = margin(l = 20, unit = "pt"))  # Adjust left margin
