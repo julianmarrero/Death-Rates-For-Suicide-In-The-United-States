@@ -7,7 +7,7 @@ The raw dataset used for the analysis is in the `Data` folder titled Death_rates
 3) Download the dataset in whichever format you prefer.
 
 # Recreating Figures
-The .png files of all the figures included in the paper can be found in the `Figures` folder. If you want to recreate the figures yourself, the `01-data_analysis.r` file contains the R script to conduct the analysis, show the summary statistics, and plot the graphs. 
+The .png files of all the figures included in the paper can be found in the `Figures` folder. If you want to recreate the figures yourself, the `01-data_analysis.R` file contains the R script to conduct the analysis, show the summary statistics, and plot the graphs. 
 
 ## Use of LLM's 
 Copilot was used when creating the R scripts for creating the figures in the report. It was used to help with writing functions and auto-completing lines of code.
