@@ -1,3 +1,12 @@
+# This script is designed to generate a synthetic dataset for testing and development purposes.
+# It simulates demographic and statistical data related to suicide rates, structured to resemble
+# actual collected data over the period from 1950 to 2020. The script uses random sampling techniques
+# to create a dataset with 1000 entries, incorporating variability in year, age, sex, race, and
+# suicide rate estimates. This simulated data is valuable for testing data processing algorithms,
+# statistical analyses, and visualization tools without using real, sensitive data.
+# The use of a fixed seed ensures that the results are reproducible, facilitating debugging and
+# development of data handling procedures.
+
 set.seed(123)  # Set seed for reproducibility
 
 # Define the number of entries to simulate
